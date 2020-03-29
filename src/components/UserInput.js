@@ -18,8 +18,10 @@ class UserInput extends Component {
     event.preventDefault();
     this.props.dispatch({type: 'ADD_USER', user: this.state})
   }
-
+ 
   render() {
+    
+    
     return(
       <form onSubmit={this.handleOnSubmit}>
         <p>
@@ -43,5 +45,7 @@ class UserInput extends Component {
     )
   }
 }
+
+
 
 export default connect()(UserInput);
