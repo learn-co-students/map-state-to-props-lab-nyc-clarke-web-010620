@@ -9,7 +9,8 @@ export default function manageUsers(state = {
         users: [...state.users, action.user]
       }
 
-    default:
+    
+      default:
       return state;
   }
 };
